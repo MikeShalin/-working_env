@@ -1,0 +1,32 @@
+#!/bin/bash
+
+echo "Разворачиваем приложение"
+
+# Для создания Native приложения расскоментировать строчки до ***END***
+# react-native init MyAwesomeProject --template typescript
+# cd MyAwesomeProject
+# mv * ..
+# mv .buckconfig ..
+# mv .gitattributes ..
+# mv .gitignore ..
+# mv .watchmanconfig ..
+# cd ..
+# rm -rf MyAwesomeProject
+
+#***END***
+
+# Для создания React приложения расскоментировать строку ниже
+# npx create-react-app my-app --typescript; cd my-app; mv * ..;  mv .gitignore ..; cd ..; rm -rf my-app/
+
+echo "Устанавливаем зависимости"
+
+# если глобально не стоит, раскомментировать npm i -g commitizen
+npm i -D cz-customizable
+npm i --save lodash
+npm i --save mobx mobx-state-tree
+npm i --save --dev prettier
+npm i --save --dev husky
+npm i --save classnames
+npm i --save moment
+npm i --save recompose
+npm i --save styled-components
